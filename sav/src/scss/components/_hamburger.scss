@@ -1,0 +1,94 @@
+.hamburger {
+	max-width: 80rem;
+	margin: 0 auto;
+	position: relative;
+	/* .hamburger__box */
+	&__box {
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
+		border-radius: 5px;
+		background-color: $color-light-1;
+		padding: 2.5rem;
+	}
+	/* .hamburger__up */
+	&__up {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+
+	/* .hamburger__left */
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+
+
+	/* .hamburger__logo */
+	&__logo {
+		width: 1.8rem;
+		height: 100%;
+		margin-right: 2.5rem;
+	}
+	/* .hamburger__header-text */
+	&__header-text {
+		
+		color: $color-dark-1;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+
+	/* .hamburger__triangel */
+	&__triangel {
+		width: 1px;
+		height: 1px;
+		border-style: solid;
+		border-width: 11px 6px 0 6px;
+		border-color: $color-dark-1 transparent transparent transparent;
+
+	}
+	/* .hamburger__down */
+	&__down {
+		display: none;
+	}
+
+	/* .hamburger__img */
+	&__img {
+		margin-right: 2.5rem;
+		width: 250px;
+		height: 100%;
+	}
+
+
+	/* .hamburger__text */
+	&__text {
+		
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.45px;
+	}
+
+	/* .hamburger__chk */
+	&__chk {
+		position: absolute;
+		visibility: hidden;
+	}
+	&__chk:checked ~  .hamburger__down{
+		display: flex;
+	}
+
+	&__chk:checked ~ .hamburger__up .hamburger__triangel{
+		// width: 1px;
+		// height: 1px;
+		// border-style: solid;
+		// border-width: 0 6px 11px 6px;
+		// border-color: transparent transparent $color-dark-1 transparent;
+		transform: rotate(180deg);
+	}
+
+
+}

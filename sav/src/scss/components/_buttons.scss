@@ -1,0 +1,128 @@
+.btn{
+	display: inline-block;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	// padding: 2rem 2.8rem;
+	border-radius: 6px;
+    transition: color 1s;
+    position: relative;
+	
+	font-weight: 400;
+	text-transform: uppercase;
+
+	/* .btn__shopping-card */
+	&__shopping-card {
+		min-width: 16rem;
+		background: rgba($color-six, .8);
+		color: $color-light-1;
+		animation: moveInBottom ease-out .75s;
+	  	animation-fill-mode: backwards; 
+		margin-top: 2rem;
+		padding: 2rem 3rem;
+		// color: $color-light-1;
+		cursor: pointer;
+		transition:.2s; 
+		transform: translateY(-3px);
+  		box-shadow: 0 1rem 2rem rgba($color-dark-1, 0.5) ;
+	}
+	
+	/* .btn__content */
+	&__content {
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		background: none;
+		padding: 1.5rem 2rem;
+		color: $color-light-1;
+		cursor: pointer;
+		transition:.7s; 
+		&:hover{
+			color: $color-secondary;
+		}
+	}
+	/* .btn_primary */
+	&_primary{
+		background: $color-primary;
+		color: $color-light-1;
+	}
+	/* .btn_dark */
+	&_dark {
+		background: $color-dark-1;
+		color: $color-light-1;
+	}
+	/* .btn_light */
+	&_light {
+		background: $color-light-1;
+		color: $color-dark-1;
+	}
+
+	
+	&:hover{
+		opacity: 0.9;
+		
+	}
+	&:active{
+		transform: translateY(0px);
+		box-shadow: 0 .5rem 1rem rgba($color-primary, 1);
+	}
+	// .btn__search
+	&__search{
+		margin-left: 1rem;
+		padding: 1rem 2rem;
+		font-size: 1.6rem;
+		border-radius: 5px;
+		
+		&:hover{
+			
+		}
+	}
+    //////// Hover effects::before
+	
+ //    &::before{
+ //    	content: "";
+ //    	position: absolute;
+ //    	top: 0;
+	// 	left: 0;
+	// 	transform: scaleY(0);
+	// 	height: 100%;
+ //       	width: 5px;
+	// 	background: $color-light-1;
+	// 	z-index: 1;
+	// 	transition: transform .3s,
+ //                    width .4s cubic-bezier(0,0,0,1) .3s,
+ //                    background-color .1s;
+
+ //    }
+ //    &:hover::before {
+	// 	transform: scale(1);
+	// 	width: 100%;
+	// }
+	// /* .btn__delete */
+	// &__delete {
+	// 	color: $color-sell;
+	// }
+	// // __hover-down
+	// &__hover-down{
+	// 	&::before{
+	//     	content: "";
+	//     	position: absolute;
+	//     	top: 0;
+	// 		left: 0;
+	// 		transform: scaleY(0);
+	// 		height: 1px;
+	//        	width: 100%;
+	// 		background: $color-primary;
+	// 		z-index: 1;
+	// 		border-radius: inherit;
+	// 		transition: transform .2s,
+	//                     height .4s cubic-bezier(1,0,0,1) .2s,
+	//                     background-color .2s;
+
+	//     }
+	//     &:hover::before {
+	// 		transform: scale(1);
+	// 		height: 100%;
+	// 	}
+	// }
+
+}

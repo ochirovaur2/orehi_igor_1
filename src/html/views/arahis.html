@@ -1,0 +1,86 @@
+<% var data = {
+  title: "Каталог | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+        <div class="breadcrumbs">
+            <a href="/index.html" class="active">Главная</a>
+            <a  href="/.html">О нас</a>
+            <a href="/about.html">Что-то</a>
+        </div>
+		<h2 class="paragraph my-b-normal">
+			<i class="fas fa-store-alt primary-color"></i>
+			
+			
+		</h2>
+		<div class="products catalog__content">
+			
+			<div class="products">
+				
+				
+				<div class="cards features__cards-my-bottom">
+					
+					<!-- card -->
+
+					<div class="cards__cards-box">
+						<a href="product.html" >
+							<div class="cards__img-box">
+				              <img src="img/products/arahis/arahis3.jpg" alt="Card" class="cards__img">
+				            </div>
+				            <h4 class="heading-tertiary my-normal">Изюм</h4>
+				        </a>
+				            <p class="paragraph_price">500 руб.</p>
+				            <p class="paragraph_packing">Фасовка</p>
+							<p class="paragraph_packing">1 кг</p>
+							<a href="#0" class=" btn btn__shopping-card" data-name="Арахис очищенный жар. сол." data-price="500" data-quantity="1000" data-optionfirst="" data-promotionparticipant="true" data-weight="1 кг" data-id="1"><span class="btn__content">В корзину</span></a>
+							
+					</div>	
+
+					<!-- card -->
+
+					<div class="cards__cards-box">
+						<a href="product.html" >
+							<div class="cards__img-box">
+				              <img src="img/products/arahis/arahis3.jpg" alt="Card" class="cards__img">
+				            </div>
+				            <h4 class="heading-tertiary my-normal">Арахис очищенный жар. сол.</h4>
+				        </a>
+				            <p class="paragraph_price">100 <i class="fas fa-ruble-sign"></i> </p>
+				            <p class="paragraph_packing">Фасовка</p>
+							<p class="paragraph_packing">500</p>
+							<a href="#0" class=" btn btn__shopping-card" data-name="Арахис жар" data-price="100" data-quantity="500" data-optionfirst="" data-promotionparticipant="true" data-weight="0.5 кг" data-id="2"><span class="btn__content">В корзину</span></a>
+							
+					</div>	
+					
+					
+				</div>
+				<div class="pagination"> 
+					<span class="pagination__step-links">
+        
+        			<span class="pagination__current">
+            			Страница 1 из 2. Товаров показано 1 - 12 из 13.
+        			</span > 
+        				<a href="http://127.0.0.1:8000/?page=2" class="pagination__nextPage">Вперед<i class="fas fa-arrow-right pagination__arrow"></i></a> 
+        			</span>
+
+				</div>	
+			</div>
+			
+		</div>
+
+		
+
+
+		
+		
+        
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

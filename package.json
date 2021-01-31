@@ -1,0 +1,44 @@
+{
+  "name": "static-site-webpack-habr",
+  "version": "2.0.0",
+  "description": "HTML template",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html",
+    "compress:css": "node-sass dist/css/style.bundle.css dist/css/style.css --output-style compressed"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "jquery": "^3.4.1",
+    "pgwslider": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "core-js": "^3.6.1",
+    "css-loader": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.13.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "npm": "^6.13.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "raw-loader": "^4.0.0",
+    "regenerator-runtime": "^0.13.3",
+    "sass-loader": "^8.0.0",
+    "smart-grid": "^2.1.2",
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

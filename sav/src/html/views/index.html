@@ -1,0 +1,640 @@
+<% var data = {
+  title: "Вкусная лавка ||  Орехи, сухофрукты"
+  }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- {% extends 'shop/body.html' %}
+{% load static %}
+{% block title %}
+{% if sub_category %}{{ sub_category.title_mcat }}  | Онлайн-магазин Вкусная Лавка {% else %}{% if category %}{{ category.title_cat }}  | Онлайн-магазин Вкусная Лавка{% else %}Каталог | Онлайн-магазин Вкусная Лавка{% endif %}{% endif %}
+{% endblock title %}
+{% block body_section %} -->
+
+<!-- Main -->
+<section class="catalog">
+	<div class="container catalog__container">
+		<ul class="side-nav">
+			<li class="side-nav__item ">
+				<a href="" class="side-nav__link">
+					Орехи
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Сухофрукты
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Ягоды
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Мед
+				</a>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Деликатесы
+				</a>
+			</li>
+		</ul>
+
+		<div class="products catalog__content">
+			
+			<ul class="pgwSlider">
+			    <li><img src="./img/fotorama/f.jpg"></li>
+			    <li><img src="./img/fotorama/s.jpg" ></li>
+			    <li>
+			        <a href="http://www.nyc.gov" target="_blank">
+			            <img src="./img/fotorama/2.png">
+				    
+			        </a>
+			    </li>
+			</ul>
+			<div class="products my-big">
+				
+				<!-- card list -->
+
+				<div class="cards features__cards-my-bottom">
+
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Мед.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Мед</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+				
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Чернослив.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Чернослив</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Миндаль.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Миндаль</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Арахис.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Арахис</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+				
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Бразильский орех.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Бразильский орех</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Грецкий.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Грецкий орех</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>	
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Фундук.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Фундук</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Курага.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Курага</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Макадамия.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Макадамия</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Манго.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Манго</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					
+					
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Фисташка.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Фисташка</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					<!-- card -->
+
+					<div class="cards__cards-box">
+					    <div class="cards__sell">Акция!</div>
+					    <a href="/product/chernosliv-vkusnyj/23/">
+					        <div class="cards__img-box">
+					            <img alt="Card" class="cards__img" src="./img/catalog/Кешью.jpg">
+					        </div>
+					    </a>
+					    <h4 class="heading-tertiary my-normal"> <a href="/product/chernosliv-vkusnyj/23/" class="paragraph_dark">Кешью</a></h4>
+					    <p class="paragraph_price"> 370,00 руб.</p>
+					    <p class="paragraph_packing">за 1 кг</p>
+					    <form action="/cart/add/23/)" method="post">
+					        <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+					            <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required id="id_quantity">
+					            <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+					        </div>
+
+					        <div class="cards__radio-box">
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="1000" id="id23_2_1000" checked class="cards__radio choice-btn-js">
+					                <label for="id23_2_1000" class="cards__label-radio">1 кг</label>
+					            </div>
+					            <div class="cards__radio-div">
+					                <input name="gramm" type="radio" value="500" id="id23_1_500" class="cards__radio choice-btn-js">
+					                <label for="id23_1_500" class="cards__label-radio">500 гр</label>
+					            </div>
+
+					        </div>
+
+					        <input type="hidden" name="update" value="False" id="id_update">
+
+					        <input type="hidden" name="csrfmiddlewaretoken" value="uWMOT7Y4zkilRSG7GPylCFO73xA7dyihwVMbbcVeSF3iG3k89icTTMidSHm9zFzI">
+					        <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Чернослив вкусный" data-price="370,00" data-optionfirst="" data-promotionparticipant="true" data-id="23" data-url="/cart/add/23/)">В корзину</button>
+					    </form>
+					</div>
+					
+				
+				
+
+
+				</div>
+
+				<!-- pagination -->
+				
+				<div class="pagination"> 
+					<span class="pagination__step-links">
+        
+        			<span class="pagination__current">
+            			Страница 1 из 2. Товаров показано 1 - 12 из 13.
+        			</span > 
+        				<a href="http://127.0.0.1:8000/?page=2" class="pagination__nextPage">Вперед<i class="fas fa-arrow-right pagination__arrow"></i></a> 
+        			</span>
+
+				</div>	
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

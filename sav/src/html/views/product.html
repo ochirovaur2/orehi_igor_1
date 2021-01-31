@@ -1,0 +1,87 @@
+<% var data = {
+  title: "Товар | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+        <div class="breadcrumbs">
+            <a href="/index.html" class="active">Главная</a>
+            <a  href="/.html">О нас</a>
+            <a href="/about.html">Что-то</a>
+        </div>
+		<h2 class="paragraph my-b-normal">
+			<i class="fas fa-store-alt primary-color"></i>
+			
+			Арахис очищенный
+		</h2>
+		<div class="product">
+			
+			<div class="product__box">
+				<div class="product__img-box" id='ex1'>
+                <img src="./img/catalog/51.jpg"  alt="Card" class="product__img ">
+              </div>
+		            
+		        
+		        <div class="product__query">
+                 <p class="paragraph_price">Миндаль в скорлупе</p>
+                <p class="paragraph_price"> 750,00 руб. </p>
+                    <p class="paragraph_packing">за 1 кг</p>
+                    <p class="paragraph_packing">В наличии</p>
+
+                <form action="/cart/add/1/)" method="post" class="product__form">
+                       <div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+                       <input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required="" id="id_quantity">
+                       <button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button></div>
+                           
+                           <p class="paragraph_packing" align="center">Фасовка</p>
+                       <div class="cards__radio-box">
+                                
+                            <div class="cards__radio-div">
+            <input name="gramm" type="radio" value="500" id="id1_1_500" checked="" class="cards__radio">
+            <label for="id1_1_500" class="cards__label-radio">500 гр</label>
+                            </div>
+                                 
+                            <div class="cards__radio-div">
+            <input name="gramm" type="radio" value="1000" id="id1_2_1000" class="cards__radio">
+            <label for="id1_2_1000" class="cards__label-radio">1 кг</label>
+                            </div>
+                            <div class="cards__radio-div">
+            <input name="gramm" type="radio" value="1000" id="id1_2_1000" class="cards__radio">
+            <label for="id1_2_1000" class="cards__label-radio">1 кг</label>
+                            </div>
+                            <div class="cards__radio-div">
+            <input name="gramm" type="radio" value="1000" id="id1_2_1000" class="cards__radio">
+            <label for="id1_2_1000" class="cards__label-radio">1 кг</label>
+                            </div>
+                                 
+            			</div>
+                            
+                        <input type="hidden" name="update" value="False" id="id_update">
+                       <input type="hidden" name="csrfmiddlewaretoken" value="bL5bgkRdsajL5S8a1FFdiWqGf6Z58NnHdK5yypOnLv4IU3Mbu8jLz3UM4gL7uUE8">
+                   <button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="Миндаль в скорлупе" data-price="750,00" data-optionfirst="" data-promotionparticipant="true" data-id="1" data-url="/cart/add/1/)">В корзину</button>
+                </form>
+                <p class="paragraph_promotion">Участвует в акции 10кг. + 1кг. </p>
+                 
+         </div>
+
+			</div>
+			<div class="product_description">
+				<p class="paragraph_price my-b-normal">Производство: Россия</p>
+		        <p class="paragraph_packing my-b-normal">Упаковка: Пакет PET/PE 65МКР</p>
+				<p class="paragraph_packing my-b-normal">Драже – это вкусное и полезное лакомство, покрытое разноцветной или шоколадной глазурью. Драже нравится как детям, так и взрослым. Широчайший ассортимент позволяет выбрать ту сладость, которая вам больше всего по вкусу.</p>
+			</div>
+				
+		            
+			
+		</div>
+
+		
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

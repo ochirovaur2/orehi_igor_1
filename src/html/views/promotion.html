@@ -1,0 +1,45 @@
+<% var data = {
+  title: "О нас | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+	      <div class="breadcrumbs">
+	          <a href="/index.html" class="active">Главная</a>
+	          <a  href="/about.html">Акция 10+1</a>
+	          <a href="/about.html">Что-то</a>
+	      </div>
+		<h2 class="heading-secondary my-b-normal">
+			<i class="fas fa-gift primary-color"></i>
+			
+			Акция 10+1
+		</h2>
+		<p class="paragraph my-b-normal">
+			При покупке от 10кг товара, который учавствует в акции 10+1, в подарок 1 кг нашей продукции
+		</p>
+		<p class="paragraph my-b-normal">
+			Наша система подходит для тех, кто хочет заняться корпоративными заказами.
+		</p>
+		<p class="paragraph my-b-normal">
+			Самый активный собирает заказы у своих коллег или друзей и остается в плюс, так как при заказе каждых 10 кг он получит в подарок по 1 кг продукта совершенно бесплатно!
+		</p>
+		<p class="paragraph my-b-normal">
+			Т.е заказчик собрав заказ на 30кг, может получить бесплатно 3 кг разных продуктов
+		</p>
+		<p class="paragraph my-b-normal">
+			* Бонусы определяются в зависимости от заказа.
+		</p>
+
+
+		
+		
+        
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,137 @@
+.footer {
+	background: $color-dark-1;
+	
+	// padding: 3rem 2rem;
+	/* .footer__container */
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: $color-dark-1;
+		padding: 8rem 2rem;
+	}
+	/* .footer__list */
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-right: 4rem;
+
+	}
+	/* .footer__left */
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+	/* .footer__item */
+	&__item {
+	}
+	/* .footer__link */
+	&__link {
+		color: $color-light-1;
+		font-size: 2.2rem;
+		line-height: 2.2rem;
+		margin-bottom: 1.5rem;
+	}
+	/* .footer__contact-box */
+	&__contact-box {
+		display: flex;
+		align-items: flex-start;
+	}
+	/* .footer__logo-box */
+	&__logo-box {
+		// padding: 2.5rem ;
+		// padding-bottom: 3.3rem;
+		background: $color-light-1;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+		padding: 2rem;
+		margin-right: 4rem;
+	}
+	&__logo {
+		width: 150px;
+		height: 100%;
+		background: none;
+		// padding: 2rem;
+	}
+	/* .footer__contacts */
+	&__contacts {
+		margin-right: 3rem;
+	}
+	@media only screen and (max-width: $bp-medium){
+		/* .footer__left */
+		&__left {
+			flex-direction: column;
+		}
+		&__logo-box{
+			margin-right: 0;
+		}
+		&__list{
+			align-items: center;
+			justify-content: center;
+			margin-right: 0;
+			border-bottom: 1px solid white;
+			margin-bottom: 2rem;
+		}
+		&__contact-box{
+			align-items: center;
+			justify-content: center;
+			
+		}
+		&__logo {
+			margin-bottom: 2rem;
+		}
+		&__container {
+			flex-direction: column;
+			padding: 3rem 2rem 8rem;
+		}
+		&__contact-box {
+			flex-direction: column;
+			margin-right: 0;
+		}
+		&__contacts {
+			margin-right: 0;
+			border-bottom: 1px solid white;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+
+
+.social {
+	text-align: center;
+	/* .social__link */
+	div{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+
+		a{
+			color: $color-light-1;
+			i{
+				padding: 1rem;
+				font-size: 1.6rem;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				margin: 1rem 10px;
+				cursor: pointer;
+				&:hover{
+					background: $color-primary;
+				}
+				@media only screen and (max-width: $bp-medium){
+					margin: 0 1rem ;
+					
+				}
+			}
+		}
+	}
+	
+	
+}
+
+

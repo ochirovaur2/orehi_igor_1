@@ -1,0 +1,122 @@
+<% var data = {
+  title: "Оформление заказа | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div id="orderPage-js"></div>
+	<div class="row height">
+		<h2 class="heading-secondary my-b-normal">
+			<i class="fas fa-shopping-basket primary-color"></i>
+			
+			Оформление заказа
+		</h2>
+			<div class="order">
+				<div class="order__info">
+					<h3 class="heading-tertiary order__header">Ваш заказ:</h3>
+					<table class="order__table">
+						<thead>
+							<tr>
+								<td class="paragraph__table paragraph paragraph__table-head">Наименование</td>
+								<td class="paragraph__table paragraph paragraph__table-head">Фасовка</td>
+								<td class="paragraph__table paragraph paragraph__table-head">Количество</td>
+								<td class="paragraph__table paragraph paragraph__table-head">Цена</td>
+								<td class="paragraph__table paragraph paragraph__table-head">Итого</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p class="paragraph__table paragraph"><strong>Миндаль в скорлупе</strong></p>
+								</td>
+								<td class="paragraph__table paragraph">по 1 кг.</td>
+								<td class="paragraph__table paragraph">10</td>
+								<td class="paragraph__table paragraph">750,00 руб</td>
+								<td class="paragraph__table paragraph">
+									<p class="paragraph__table paragraph">7500,00 руб</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="paragraph__table paragraph"><strong>Миндаль в скорлупе</strong></p>
+								</td>
+								<td class="paragraph__table paragraph">по 1 кг.</td>
+								<td class="paragraph__table paragraph">10</td>
+								<td class="paragraph__table paragraph">750,00 руб</td>
+								<td class="paragraph__table paragraph">
+									<p class="paragraph__table paragraph">7500,00 руб</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="paragraph__table paragraph"><strong>Миндаль в скорлупе</strong></p>
+								</td>
+								<td class="paragraph__table paragraph">по 1 кг.</td>
+								<td class="paragraph__table paragraph">10</td>
+								<td class="paragraph__table paragraph">750,00 руб</td>
+								<td class="paragraph__table paragraph">
+									<p class="paragraph__table paragraph">7500,00 руб</p>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="order__gift">
+								<td class="paragraph__table paragraph"><strong>Подарок</strong></td>
+								<td class="paragraph__table paragraph"> по 1 кг.</td>
+								<td class="paragraph__table paragraph">1</td>
+								<td class="paragraph__table paragraph">0,00 руб</td>
+								<td class="paragraph__table paragraph">0,00 руб</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="heading-tertiary order__total">Общий итог: 7500,00 руб</p>
+					
+				
+					
+		        	
+				</div>
+		        
+		    </div>
+		    
+			<h3 class="heading-tertiary order__header">Данные:</h3>
+		    <form action="http://127.0.0.1:8000/orders/create/" method="post" class="order__form">
+		        <p class="order_p">
+		        	<label for="id_first_name" class="order__label">Имя*:</label> <input type="text" name="first_name" maxlength="50" required="" id="id_first_name" class="order__name order__input" placeholder="Имя">
+		        </p>
+				<p class="order_p">
+					<label for="id_email" class="order__label">Email*:</label> <input type="email" name="email" maxlength="254" required="" id="id_email"  class="order__mail order__input" placeholder="Ваша электронная почта">
+				</p>
+				<p class="order_p">
+					<label for="id_number" class="order__label">Телефон*:</label> <input type="text" name="number" maxlength="20" required="" id="id_number" class="order__tel order__input" placeholder="Телефон">
+				</p>
+				<p class="order_p">
+					<label for="id_address" class="order__label">Адрес*:</label> 
+					<textarea name="address" class="order__address order__input " rows="4" cols="45" name="text" placeholder="Адрес" id="id_address"></textarea>
+					<!-- <input type="textarea" name="address" maxlength="250" required="" id="id_address" class="order__address order__input " rows="3" placeholder="Адрес"> -->
+				</p>
+				<p class="order_p">
+					<label for="id_comment" class="order__label">Комментарий*:</label> 
+					<textarea name="address" class="order__comment order__input " rows="4" cols="45" name="text" placeholder="Адрес" id="id_comment"></textarea>
+					<!-- <input type="textarea" name="address" maxlength="250" required="" id="id_address" class="order__address order__input " rows="3" placeholder="Адрес"> -->
+				</p>
+				<div class="licence filter ">
+		          <input type="checkbox" id="licenses_inline" class="licence__inline" checked="" name="licenses_inline" required="required" value="Y" aria-required="true">
+		          <label for="licenses_inline" class="licence__label licence__label_dark">
+		            Я согласен на <a class="licence__link licence__link_gray" href="/licence.html" target="_blank">обработку персональных данных</a>          </label>
+		        </div>
+		        <p class="order_p">
+		        	<input type="submit" value="Заказать" class="order__button">
+		        </p>
+		        <input type="hidden" name="csrfmiddlewaretoken" value="IJ5IySW98qwSFZRGj2L7ZBZ64qLm2J8jDr5d36UeeYyvjM6srMWk6SjQy3Y36ASO">
+		    </form>
+
+
+		
+		
+        
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,38 @@
+<% var data = {
+  title: "О нас | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+	      <div class="breadcrumbs">
+	          <a href="/index.html" class="active">Главная</a>
+	          <a  href="/about.html">О нас</a>
+	          <a href="/about.html">Что-то</a>
+	      </div>
+	      <h2 class="heading-secondary my-b-normal">
+			
+				<i class="fas fa-users primary-color"></i>
+				О нас
+			</h2>
+	      <div class="about">
+	      	<div class="about__img-box">
+	      		<img src="./img/about/1.jpg" alt="" class="about_img">
+	      	</div>
+			<p class="paragraph">Мы молодая компания в сфере натуральных и полезных продуктов со своей уникальной концепцией. Наша цель предоставить вам высококачественную продукцию по доступной цене. На данный момент вы не найдете таких низких цен как у нас, также мы специально разработали бонусную систему для тех, кто хочет абсолютно бесплатно получить подарки. </p>
+	      </div>
+		
+		
+
+
+		
+		
+        
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,113 @@
+.heading-primary{
+	
+	color: $color-light-1;
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 6.5rem;
+	text-transform: uppercase;
+	
+
+
+	@media only screen and(max-width: $bp-medium){
+      font-size: 3rem;
+
+    }
+}
+.heading-secondary{
+	
+	color: $color-dark-1;
+	font-family: "Raleway - Semi Bold";
+	font-size: 4.5rem;
+	font-weight: 400;
+	/* .heading-secondary_light */
+	&_light {
+		color: $color-light-1;
+	}
+	& i{
+		font-size: 3rem;
+	}
+
+}
+
+.heading-tertiary{
+	color: $color-dark-1;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 2.5rem;
+	&_light {
+		color: $color-light-1;
+	}
+}
+
+.paragraph{
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.36px;
+	opacity: 0.7;
+
+	/* .paragraph_dark */
+	&_dark {
+		color: black;
+		
+	}
+	&_color-1{
+		color: #E8DEC9;
+	}
+	/* .paragraph_light */
+	&_light {
+		color: $color-light-1;
+	}
+
+	/* .paragraph_big */
+	&_big {
+		
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+	}
+	&_price{
+		font-weight: bold;
+		font-size: 2rem;
+		color: black;
+	}
+/* .paragraph_promotion */
+	&_promotion {
+		font-size: 16px;
+		padding: 10px 5px;
+		background: #8FD317;
+		margin-top: 20px;
+		color: $color-light-1;
+		text-align: center;
+		border-radius: 5px;
+	}
+	
+
+	/* .paragraph_packing */
+	&_packing {
+		color: $color-grey-dark-1;
+		font-size: 1.4rem;
+	}
+	/* .paragraph__shopping-cart */
+	&__shopping-cart {
+		color: $color-light-1;
+	}
+	/* .paragraph__table */
+	&__table {
+		font-size: 1.6rem;
+		@media only screen and(max-width: $bp-small){
+	      font-size: 1rem;
+
+	    }
+	}
+	/* .paragraph__table-head */
+	&__table-head {
+		font-weight: bold;
+	}
+}
+
+.errorlist{
+	background: $color-sell;
+	padding: 1rem;
+	color: $color-light-1;
+	margin: 1rem;
+}

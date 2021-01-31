@@ -1,0 +1,17 @@
+.contacts {
+	/* .contacts__icon */
+	&__icon {
+		color: $color-dark-1;
+		padding: 1rem;
+		font-size: 1.6rem;
+		border: 3px solid $color-dark-1;;
+		border-radius: 50%;
+		margin: 0 10px;
+		cursor: pointer;
+		&:hover{
+			background: $color-primary;
+			color: $color-light-1;
+			border-color: $color-light-1;
+		}
+	}
+}

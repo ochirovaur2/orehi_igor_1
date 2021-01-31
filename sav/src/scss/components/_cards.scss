@@ -1,0 +1,300 @@
+.cards {
+	padding-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	/* .cards__sell */
+	&__sell {
+		position: absolute;
+		background: $color-sell;
+		top: 0;
+		right: 0;
+		padding: 2rem;
+		color: $color-light-1;
+		font-size: 1.8rem;
+		border-bottom-left-radius: 4rem;
+		border-top-right-radius: 1rem;
+	
+		@media only screen and (max-width: $bp-extra-small){
+			padding: 1.5rem;
+		}
+	}
+	/* .cards__cards-box */
+	&__cards-box {
+		position: relative;
+		border-radius: 1rem;
+		//////////////////////////////////
+		// It looks like a bug in IE with calc
+		// So instead of using "calc(100% / 12 * 3 - 3rem);"
+		// We use: "width: calc(100% / 12 * 2.9 - 3rem);"
+		// Bug is explained here: 
+		// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351
+		width: calc(100% / 12 * 3.9 - 3rem);
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		text-align: center;
+		display: block;
+		margin-bottom: 2.5rem;
+		padding: 3rem 1rem 2rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		&:hover{
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+
+	}
+	/* .cards__img-box */
+	&__img-box {
+	}
+	/* .cards__img */
+	&__img {
+		width: 95%;
+		margin-bottom: 1.5rem;
+
+	}
+	/* .cards__radio-box */
+	&__radio-box {
+		display: flex;
+		justify-content: center;
+	}
+	/* .cards__radio-div */
+	&__radio-div {
+		margin: 1.5rem 0.5rem;
+	}
+	/* .cards__radio */
+	&__radio {
+		display: none;
+		&:checked ~ .cards__label-radio {
+			background: $color-six;
+		}
+	}
+	/* .cards__label-radio */
+	&__label-radio {
+		font-size: 1.4rem;
+		padding: 0.7rem;
+		background: $color-tertiary;
+		cursor: pointer;
+		color: $color-light-1;
+		border-radius: 9px;
+		&:hover{
+			background: $color-primary;
+		}
+	}
+	/* .cards__link */
+	&__link {
+		color: inherit;
+	}
+	/* .cards__quantity */
+	&__quantity {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	/* .cards__plus */
+	&__plus,
+	&__minus {
+	  width: 25px;
+	  height: 25px;
+	  background-color: #E1E8EE;
+	  border-radius: 6px;
+	  border: none;
+	  cursor: pointer;
+	  font-size: 20px;
+	  // font-weight: bold;
+	  // color: $color-light-1;
+
+	}
+	/* .cards__input-val */
+	&__input-val {
+		-webkit-appearance: none;
+	  	border: none;
+	  	text-align: center;
+	  	width: 28px;
+	  	font-size: 16px;
+	  	color: #43484D;
+	  	font-weight: 300;
+	}
+	@media only screen and (max-width: $bp-large){
+
+		&__cards-box{
+			//////////////////////////////////
+			// It looks like a bug in IE with calc
+			// So instead of using "calc(100% / 12 * 6 - 3rem);"
+			// We use: "width: calc(100% / 12 * 5.5 - 3rem);"
+			// Bug is explained here: 
+			// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351 
+			width: calc(100% / 12 * 5.6 - 3rem);
+			margin-bottom: 5rem;
+			position: relative;
+			padding-bottom: 5rem;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 50%;
+				height: 2px;
+				background: lightgray;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+			}
+
+			
+		}
+		// &__sell {
+		// 	position: absolute;
+		// 	background: $color-sell;
+		// 	top: 0;
+		// 	right: 0;
+		// 	padding: 1rem;
+		// 	color: $color-light-1;
+		// 	font-size: 1rem;
+		// 	border-bottom-left-radius: 2rem;
+		// 	border-top-right-radius: 1rem;
+			
+		// }
+	}
+	@media only screen and (max-width: $bp-small){
+
+		&__cards-box{
+			//////////////////////////////////
+			// It looks like a bug in IE with calc
+			// So instead of using "calc(100% / 12 * 6 - 3rem);"
+			// We use: "width: calc(100% / 12 * 5.5 - 3rem);"
+			// Bug is explained here: 
+			// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351 
+			width: calc(100% / 12 * 8 - 3rem);
+			margin-bottom: 5rem;
+			position: relative;
+			padding-bottom: 5rem;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 50%;
+				height: 2px;
+				background: lightgray;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+			}
+		}
+	}
+}
+
+
+// .cards {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	margin: 0 -1.6rem;
+// 	justify-content: center;
+// 	/* .cards__card-box */
+
+// 	&__card-box {
+// 		//////////////////////////////////
+// 		// It looks like a bug in IE with calc
+// 		// So instead of using "calc(100% / 12 * 3 - 3rem);"
+// 		// We use: "width: calc(100% / 12 * 2.9 - 3rem);"
+// 		// Bug is explained here: 
+// 		// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351
+// 		width: calc(100% / 12 * 3.9 - 2rem);
+// 		margin: 0 1.6rem;
+		
+// 	}
+
+// 	/* .cards__img-box */
+
+// 	&__img-box {
+		
+// 	}
+
+// 	/* .cards__img */
+
+// 	&__img {
+// 		height: 6.8rem;
+// 		margin-bottom: 4.5rem;
+// 	}
+	
+// 	/* .cards__photo */
+
+// 	&__photo{
+// 		width: 20rem;
+// 		margin-bottom: 4rem;
+// 	}
+
+// 	/* .cards__heading */
+
+// 	&__heading {
+		
+// 		/* .cards__heading_service */
+
+// 		&_service{
+// 			margin-bottom: 2.7rem;
+// 		}
+
+// 		/* .cards__heading_names */
+		
+// 		&_names{
+// 			margin-bottom: 1.5rem;
+// 		}
+// 	}
+
+
+// 	/* .cards__post */
+
+// 	&__post {
+// 		font-size: 1.6rem;
+// 		font-weight: 400;
+// 		letter-spacing: 0.32px;
+// 		margin-bottom: 2.6rem;
+// 		&_lightblue {
+// 			color: #30bae7;
+
+// 		}
+// 	}
+
+
+
+
+
+
+// 	@media only screen and (max-width: $bp-medium){
+
+// 		&__card-box{
+// 			//////////////////////////////////
+// 			// It looks like a bug in IE with calc
+// 			// So instead of using "calc(100% / 12 * 6 - 3rem);"
+// 			// We use: "width: calc(100% / 12 * 5.5 - 3rem);"
+// 			// Bug is explained here: 
+// 			// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351 
+// 			width: calc(100% / 12 * 5.5 - 2rem);
+// 			margin-bottom: 5rem;
+// 			position: relative;
+// 			padding-bottom: 5rem;
+// 			&::before{
+// 				content: "";
+// 				position: absolute;
+// 				width: 50%;
+// 				height: 2px;
+// 				background: lightgray;
+// 				left: 50%;
+// 				transform: translateX(-50%);
+// 				bottom: 0;
+// 			}
+// 		}
+// 	}
+// 	@media only screen and (max-width: $bp-small){
+// 		margin: 0 auto;
+
+// 		&__card-box{
+// 			width: calc(100% - 2rem);
+// 			&:last-child{
+// 				margin-bottom: 0;
+// 			}
+// 		}
+// 	}
+// }
+

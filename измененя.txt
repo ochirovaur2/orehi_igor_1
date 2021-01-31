@@ -1,0 +1,13 @@
+Добавить в header: <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+Удалить из header:<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700&display=swap" rel="stylesheet">
+Убрать br между Уникальная бонусная, сделать таким: <span class="nav-first__icon-text"><a href="" class="paragraph_dark">Уникальная бонусная  <br>система 10+1</a></span>
+
+cart.html:
+в иконку корзины добавить маргины, так как сейчас она прилипает к картинке: сделать так: <i class="fas fa-trash-alt item__delete my-big"></i>
+
+Поправить поиск
+
+product.html
+
+Реализовал увеличение картинки при наведении, нужно в <div class="product__img-box" > добавить id='ex1': 
+сделать так: <div class="product__img-box" id='ex1'>

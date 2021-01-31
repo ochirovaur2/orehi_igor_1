@@ -1,0 +1,67 @@
+<% var data = {
+  title: "О нас | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+	      <div class="breadcrumbs">
+	          <a href="/index.html" class="active">Главная</a>
+	          <a  href="/about.html">О нас</a>
+	          <a href="/about.html">Что-то</a>
+	      </div>
+		<h2 class="heading-secondary my-b-normal">
+			
+			<i class="fas fa-search primary-color"></i>
+			Поиск
+		</h2>
+
+		<div align="center">
+				<div class="my-b-normal">
+					<form action="/search/" class="" method="get" class="search__form">
+						<input id="search" class="search__input" name="q" type="text" class="form-control" placeholder="Поиск">
+						<button type="submit" class="btn btn__search search__input">Поиск</button>
+					</form>
+				</div>
+			</div>
+			<br>
+         <div class="products">
+			
+			<div class="cards ">
+				
+					<div class="cards__cards-box">
+						<div class="cards__sell">Акция!</div>
+						<a href="/product/mindal-v-skorlupe/1/">
+							<div class="cards__img-box"> <img alt="Card" class="cards__img" src="/img/products/arahis/arahis3.jpg"> </div>
+						</a>
+						<h4 class="heading-tertiary my-normal">
+							<a href="/product/mindal-v-skorlupe/1/" class="cards__link">Миндаль в скорлупе</a>
+						</h4>
+						<p class="paragraph_price"> 750,00 руб.</p>
+						<p class="paragraph_packing">за 1 кг</p>
+						<p><a class="btn btn__shopping-card cards__link" href="/product/mindal-v-skorlupe/1/">Перейти к товару</a></p>
+					</div>
+
+					
+				
+			</div>
+		</div>
+		<!-- pagination -->
+				
+		<div class="pagination"> 
+			<span class="pagination__step-links">
+
+			<span class="pagination__current">
+    			Страница 1 из 2. Товаров показано 1 - 12 из 13.
+			</span > 
+				<a href="http://127.0.0.1:8000/?page=2" class="pagination__nextPage">Вперед<i class="fas fa-arrow-right pagination__arrow"></i></a> 
+			</span>
+
+		</div>	
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

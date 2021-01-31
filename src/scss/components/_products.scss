@@ -1,0 +1,11 @@
+.products {
+	/* .products__sort */
+	&__sort {
+		display: flex;
+	}
+	/* .products__sort-item */
+	&__sort-item {
+		margin: 1rem 2rem;
+		cursor: pointer;
+	}
+}

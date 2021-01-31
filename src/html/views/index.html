@@ -1,0 +1,330 @@
+<% var data = {
+  title: "Вкусная лавка ||  Орехи, сухофрукты"
+  }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- {% extends 'shop/body.html' %}
+{% load static %}
+{% block title %}
+{% if sub_category %}{{ sub_category.title_mcat }}  | Онлайн-магазин Вкусная Лавка {% else %}{% if category %}{{ category.title_cat }}  | Онлайн-магазин Вкусная Лавка{% else %}Каталог | Онлайн-магазин Вкусная Лавка{% endif %}{% endif %}
+{% endblock title %}
+{% block body_section %} -->
+
+<!-- Main -->
+<section class="catalog">
+	<div class="container catalog__container">
+		<ul class="side-nav">
+			<li class="side-nav__item ">
+				<a href="" class="side-nav__link">
+					Орехи
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							Арахис
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Сухофрукты
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							<!--  -->
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Ягоды
+				</a>
+				<ul class="side-nav__dropdown">
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+					<li class="side-nav__dropdown-item">
+						<a class="side-nav__dropdown-link" href="/catalog/orekhi/arakhis/">
+							
+							<span>Арахис</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Мед
+				</a>
+			</li>
+			<li class="side-nav__item">
+				<a href="" class="side-nav__link">
+					Деликатесы
+				</a>
+			</li>
+		</ul>
+
+		<div class="products catalog__content">
+			
+			<ul class="pgwSlider">
+			    <li><img src="./img/fotorama/test1.jpg"></li>
+			    <li><img src="./img/fotorama/4.jpg" ></li>
+			    <li>
+			        <a href="http://www.nyc.gov" target="_blank">
+			            <img src="./img/fotorama/2.png">
+				    
+			        </a>
+			    </li>
+			</ul>
+			<div class="products my-big">
+				
+				<!-- card list -->
+
+				<div class="cards features__cards-my-bottom">
+
+					<!-- card -->
+
+					<!--  -->
+					<div class="cards__cards-box">
+<div class="cards__sell">Скидка 10%!</div>
+<div class="cards__new">Новинка!</div>
+<a href="/product/testovyj-tovar/14/"><div class="cards__img-box">
+<img alt="Card" class="cards__img" src="img/catalog/1.jpg">
+</div></a>
+<h4 class="heading-tertiary my-normal"> <a href="/product/testovyj-tovar/14/" class="paragraph_dark">Арахис</a></h4>
+
+<div class="cards__price-box">
+<p><span class="paragraph_price ">1000,00</span> <i class="fas paragraph fa-ruble-sign"></i></p>
+<!-- <p><span class="paragraph_price cards__new-price">0</span> руб.</p> -->
+</div>
+
+
+<form action="/cart/add/14/" method="post">
+
+<div class="cards__radio-box"><div class="cards__radio-div">
+<input name="gramm" type="radio" value="1000" data-trigger="500" id="id13_2_1000" checked="" class="cards__radio choice-btn-js">
+<label for="id13_2_1000" class="cards__label-radio">1кг</label>
+</div>
+<div class="cards__radio-div">
+<input name="gramm" type="radio" value="150" data-trigger="150" id="id13_1_150" class="cards__radio choice-btn-js">
+<label for="id13_1_150" class="cards__label-radio">150 гр</label>
+</div>
+
+
+</div>
+
+<div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+<input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required="" id="id_quantity">
+<button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+</div>
+<input type="hidden" name="update" value="False" id="id_update">
+
+
+<input type="hidden" name="csrfmiddlewaretoken" value="DaUdGPtvpUXQfdIkOC0080o60s8XYPz02XOBH6V56YXnRym9urZCZPGrWpym54l4">
+<button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="ТЕСТОВЫЙ ТОВАР" data-price="1000,00" data-pricesecond="700" data-trigger="150" data-optionfirst="" data-promotionparticipant="true" data-id="14" data-sell="0"data-url="/cart/add/14/">В корзину</button>
+</form>
+</div>
+
+<div class="cards__cards-box">
+<div class="cards__sell">Акция!</div>
+<div class="cards__new">Новинка!</div>
+<a href="/product/testovyj-tovar/14/"><div class="cards__img-box">
+<img alt="Card" class="cards__img" src="img/catalog/2.jpg">
+</div></a>
+<h4 class="heading-tertiary my-normal"> <a href="/product/testovyj-tovar/14/" class="paragraph_dark">Грецкий</a></h4>
+
+<div class="cards__price-box">
+	<p>
+		<span class="paragraph_price ">2000,00</span> 
+		руб.
+	</p>
+
+</div>
+
+
+<form action="/cart/add/14/" method="post">
+
+<div class="cards__radio-box">
+	<div class="cards__radio-div">
+		<input name="gramm" type="radio" value="1000" data-trigger="0" id="id15_5_1000" checked="" class="cards__radio choice-btn-js">
+		<label for="id15_5_1000" class="cards__label-radio">1кг</label>
+	</div>
+	<div class="cards__radio-div">
+		<input name="gramm" type="radio" value="500" data-trigger="0" id="id15_5_500" checked="" class="cards__radio choice-btn-js">
+		<label for="id15_5_500" class="cards__label-radio">500</label>
+	</div>
+
+
+
+</div>
+
+<div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+<input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required="" id="id_quantity">
+<button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+</div>
+<input type="hidden" name="update" value="False" id="id_update">
+
+
+<input type="hidden" name="csrfmiddlewaretoken" value="DaUdGPtvpUXQfdIkOC0080o60s8XYPz02XOBH6V56YXnRym9urZCZPGrWpym54l4">
+<button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="ТЕСТОВЫЙ ТОВАР" data-price="2000,00" data-pricesecond="900,00" data-trigger="500" data-optionfirst="" data-promotionparticipant="true" data-id="14" data-sell="99"data-url="/cart/add/14/">В корзину</button>
+</form>
+</div>
+<div class="cards__cards-box">
+<div class="cards__sell">Акция!</div>
+<div class="cards__new">Новинка!</div>
+<a href="/product/1235j/13/"><div class="cards__img-box">
+<img alt="Card" class="cards__img" src="/pictures/default.jpg">
+</div></a>
+<h4 class="heading-tertiary my-normal"> <a href="/product/1235j/13/" class="paragraph_dark">1235й</a></h4>
+
+<div class="cards__price-box">
+<p><span class="paragraph_price cards__old-price">1 000,00</span> руб.</p>
+<p><span class="paragraph_price cards__new-price">700,00</span> руб.</p>
+
+</div>
+
+
+<form action="/cart/add/13/" method="post">
+
+<div class="cards__radio-box"><div class="cards__radio-div">
+<input name="gramm" type="radio" value="1000" data-trigger="502" id="id13_2_1000" checked="" class="cards__radio choice-btn-js">
+<label for="id13_2_1000" class="cards__label-radio">1кг</label>
+</div>
+<div class="cards__radio-div">
+<input name="gramm" type="radio" value="150" data-trigger="502" id="id13_1_150" class="cards__radio choice-btn-js">
+<label for="id13_1_150" class="cards__label-radio">150 гр</label>
+</div>
+<div class="cards__radio-div">
+<input name="gramm" type="radio" value="100" data-trigger="502" id="id13_3_100" class="cards__radio choice-btn-js">
+<label for="id13_3_100" class="cards__label-radio">100гр</label>
+</div>
+
+</div>
+
+<div class="cards__quantity"><button class="cards__minus item__minus-btn-js" type="button" name="button"> - </button>
+<input type="text" name="quantity" value="1" readonly="readonly" class="cards__input-val" required="" id="id_quantity">
+<button class="cards__plus item__plus-btn-js" type="button" name="button"> + </button>
+</div>
+<input type="hidden" name="update" value="False" id="id_update">
+
+
+<input type="hidden" name="csrfmiddlewaretoken" value="QpWwxmq1yuwXfJUyAP8RJNKAyoYrr2lafcQUyDSBfywuR4yngE7tAC2VuloQyh7e">
+<button type="submit" class="btn btn__shopping-card btn__shopping-card-js" data-name="1235й" data-price="7453,00" data-pricesecond="1000,00" data-trigger="502" data-sell="30" data-optionfirst="" data-promotionparticipant="true" data-id="13" data-url="/cart/add/13/">В корзину</button>
+</form>
+</div>
+
+				</div>
+
+				<!-- pagination -->
+				
+				<div class="pagination"> 
+					<span class="pagination__step-links">
+        
+        			<span class="pagination__current">
+            			Страница 1 из 2. Товаров показано 1 - 12 из 13.
+        			</span > 
+        				<a href="http://127.0.0.1:8000/?page=2" class="pagination__nextPage">Вперед<i class="fas fa-arrow-right pagination__arrow"></i></a> 
+        			</span>
+
+				</div>	
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

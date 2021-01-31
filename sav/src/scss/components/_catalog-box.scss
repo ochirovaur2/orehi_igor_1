@@ -1,0 +1,28 @@
+.catalog-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* .catalog-box__link */
+	&__link {
+		
+		
+	}
+	/* .catalog-box__img */
+	&__img {
+		margin: 2rem;
+		width: 280px;
+		// width: calc(100% / 12 * 3.9);
+		// margin-left: 1.5rem;
+		// margin-right: 1.5rem;
+		// text-align: center;
+		// display: block;
+		// margin-bottom: 2.5rem;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: space-between;
+		// align-items: center;
+		// &:hover{
+		// 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		// }
+	}
+}

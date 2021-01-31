@@ -1,0 +1,30 @@
+
+
+.licence {
+	margin-top:10px;
+	display: flex;
+	align-items: center;
+	/* .licence__inline */
+	&__inline {
+		width: 10px;
+		height: 10px;
+		margin-right: 1rem;
+	}
+	/* .licence__label */
+	&__label {
+		color: $color-light-1;
+		/* .licence__label_dark */
+		&_dark {
+			color: $color-dark-1;
+		}
+	}
+	/* .licence__link */
+	&__link {
+		color: $color-light-1;
+		/* .licence__link_gray */
+		&_gray {
+			color: $color-grey-dark-2;
+		}
+	}
+}
+

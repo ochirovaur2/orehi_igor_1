@@ -1,0 +1,159 @@
+.order {
+	
+	
+	/* .order__info */
+	&__info {
+		width: 100%;
+		margin: 0;
+		
+		
+	}
+	/* .order__table */
+	&__table {
+		border: 1px solid rgba(0,0,0,.1);
+		margin: 0 -1px 1rem 0;
+	    text-align: left;
+	    width: 100%;
+	    border-collapse: collapse;
+	    border-radius: 5px;
+	    & thead td {
+	    	
+	    }
+		& td{
+			padding: .9rem 1.2rem;
+			border-bottom: 1px solid gray;
+			border-right: 1px solid gray;
+			&:nth-child(1){
+				width: 30%;
+				
+			}
+		}
+		& tbody tr:nth-child(even){
+			background: $color-grey-light-1;
+		}
+		@media only screen and(max-width: $bp-medium){
+		     	& td:nth-child(1){
+				width: 50%;
+				
+			}
+	    }
+
+	}
+	/* .order__list */
+	&__list {
+		list-style-type: decimal;
+		text-align: left;
+	}
+	/* .order__item */
+	&__item {
+		padding: 1rem;
+		border-bottom: 1px solid black;
+		&:nth-child(even){
+			background: $color-grey-light-1;
+		}
+	}
+
+	/* .order__form */
+	&__form {
+		font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+		// width:750px;
+	    list-style-type:none;
+		list-style-position:outside;
+		margin:0px;
+		padding:0px;
+	}
+	/* .order__header */
+	&__header {
+		border-bottom:1px solid #777;
+		padding: 1rem 0;
+		// width: 300px;
+		// text-align: center;
+	}
+	/* .order_p */
+	&_p {
+		padding:12px; 
+		// border-bottom:1px solid #777;
+		position:relative;
+		// &:first-child,
+		// &:last-child{
+		// 	border-bottom:1px solid #777;
+		// }
+	}
+	/* .order__gift */
+	&__gift {
+		background: #8FD317;
+		color: $color-light-1;
+	}
+	/* .order__total */
+	&__total {
+		padding: 1rem;
+		text-align: right;
+		border-bottom: 1px solid gray;
+		margin-bottom: 2rem;
+	}
+	/* .order__label */
+	&__label {
+		
+		font-family:Georgia, Times, "Times New Roman", serif;
+		width:150px;
+		margin-top: 3px;
+		display:inline-block;
+		float:left;
+		padding:3px;
+	}
+	/* .order__input */
+	&__input {
+		min-width: 150px;
+		width: 80%;
+		 
+		padding: 15px 8px;
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:5px;
+		
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+		transition: 0.25s;
+		&:focus{
+			background: #fff; 
+			border:1px solid $color-primary; 
+			box-shadow: 0 0 3px #aaa; 
+			
+		}
+	}
+	/* .order__name */
+	&__name {
+	}
+	/* .order__mail */
+	&__mail {
+	}
+	/* .order__tel */
+	&__tel {
+	}
+	/* .order__address */
+	&__address {
+		height:80px;
+	}
+	/* .order__button */
+	&__button {
+		display: block;
+		margin: 2rem auto;
+		cursor: pointer;
+		color: $color-light-1;
+	    font-size: 20px;
+	    padding: 2rem 3rem;
+	    background: $color-primary;
+	    transition: 0.5s;
+	    
+
+	    &:hover{
+	      background: $color-light-1;
+	      color: $color-primary;
+	      border: 1px solid $color-primary;
+	    }
+	}
+
+}
+

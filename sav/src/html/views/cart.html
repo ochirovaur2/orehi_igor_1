@@ -1,0 +1,96 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- <script>history.go(-1)</script> -->
+<div class="container">
+	<div class="row height">
+		<!-- Title -->
+		<h2 class="heading-secondary my-b-normal">
+			
+			<i class="fas fa-shopping-cart primary-color"></i>
+			Корзина
+		</h2>
+		<div class="shopping-cart cart">
+			
+			
+			<!-- Товар #1 -->
+			<div class="item">
+				<i class="fas fa-trash-alt item__delete"></i>
+				
+				<img src="img/products/arahis/arahis3.jpg"  class="item__image" alt="Картинка">
+				<div class="item__description"> 
+					<p class="item__name">Арахис lorem10 </p>  
+					
+				</div>
+				<div class="item__price"> 
+					 
+					<p class="item__fasovka">Вес:</p > 
+					<p class="item__fasovka-val">поштучно</p>
+				</div>
+				<div class="item__price"> 
+					<p class="item__fasovka">Цена </p>  
+					<p class="item__fasovka-val">750000000 ру</p > 
+					
+				</div>
+				<div class="item__quantity">
+					<div class="item__buttons-box">
+						<button class="item__plus-btn-js item__plus-minus" type="button" name="button"> + </button>
+						<input type="text" name="name" value="1" class="item__val">
+						<button class="item__minus-btn-js item__plus-minus" type="button" name="button"> - </button>
+					</div>
+					<input type="submit" value="Обновить" class="item__update">
+				</div>
+				<div class=" item__total-price"> 
+					<p class="item__fasovka">Итого </p>  
+					<p class="item__fasovka-val">$549</p > 
+					
+				</div>
+			</div>
+			<!-- Товар #2 -->
+			<div class="item">
+				<i class="fas fa-trash-alt item__delete"></i>
+				
+				<img src=""  class="item__image" alt="Картинка">
+				<div class="item__description"> 
+					<p class="item__name">Подарок по акции дщкуь1фыв </p>  
+					
+				</div>
+				<div class="item__price"> 
+					 
+					<p class="item__fasovka">Вес:</p > 
+					<p class="item__fasovka-val">поштучно</p>
+				</div>
+				<div class="item__price"> 
+					<p class="item__fasovka">Цена за шт: </p>  
+					<p class="item__fasovka-val">0,00 руб</p > 
+					
+				</div>
+				<div class="item__quantity">
+						<div class="item__val">
+                        1   </div>
+
+                    </div>
+				<div class=" item__total-price"> 
+					<p class="item__fasovka">Итого </p>  
+					<p class="item__fasovka-val">$549</p > 
+					
+				</div>
+			</div>
+			
+
+
+		<p class="heading-tertiary item__total">Общий итог: 7500,00 руб</p>	
+		</div>
+
+		<a class="cart__gift-message">Ваш подарок за каждые 10кг акционного товара + 1 кг. Подробная информация после оформления заказа.</a>
+		<p class="cart__controller">
+	        <a href="/catalog.html" class="cart__link cart__continue cart__continue-js">Продолжить покупки</a>
+	        <a href="/order.html" class="cart__link">Оформление заказа</a>
+	    </p>
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

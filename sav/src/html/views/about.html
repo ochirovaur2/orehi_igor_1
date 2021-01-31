@@ -1,0 +1,31 @@
+<% var data = {
+  title: "О нас | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+	      <div class="breadcrumbs">
+	          <a href="/index.html" class="active">Главная</a>
+	          <a  href="/about.html">О нас</a>
+	          <a href="/about.html">Что-то</a>
+	      </div>
+		<h2 class="heading-secondary my-b-normal">
+			
+			<i class="fas fa-users primary-color"></i>
+			О нас
+		</h2>
+		
+
+
+		
+		
+        
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

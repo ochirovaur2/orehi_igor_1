@@ -1,0 +1,52 @@
+.book {
+	padding-bottom: 10rem ;
+	/* .book__form-box */
+	&__form-box {
+		margin: 0 auto;
+		max-width: 66rem;
+	}
+	/* .book__form */
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+	/* .book__input */
+	&__input {
+		width: 48%;
+		height: 5rem;
+		border: 1px solid black;
+		border-radius: 5px;
+		line-height: 5rem;
+		font-size: 2.5rem;
+	}
+	/* .book__textarea */
+	&__textarea {
+		border-radius: 5px;
+		border: 1px solid black;
+		font-size: 2.5rem;
+		width: 100%;
+
+	}
+	/* .book__chk */
+	&__chk{
+		display: flex;
+		align-items: center;
+		font-size: 1.5rem;
+	}
+
+	@media only screen and (max-width: $bp-medium){
+		&__form {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
+		&__input {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		&__chk{
+			margin: 2rem;
+			justify-content: center;
+		}
+	}
+}

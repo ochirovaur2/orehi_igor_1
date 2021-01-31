@@ -1,0 +1,47 @@
+<% var data = {
+  title: "Контакты | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<!-- Хлебные крошки -->
+    
+        <div class="breadcrumbs">
+            <a href="/index.html" class="active">Главная</a>
+            <a  href="/.html">О нас</a>
+            <a href="/about.html">Что-то</a>
+            <a href="/about.html">Что-то</a>
+        </div>
+		<h2 class="heading-secondary my-b-normal">
+			<i class="fas fa-phone primary-color"></i>
+			<span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Контакты", "Связь с нами", "Взаимосвязь"]'
+            ></span> 
+		</h2>
+		<p>
+        	<a rel="nofollow" href="tel:7*" class="paragraph my-b-normal paragraph_dark">
+				<i class="fas fa-mobile-alt footer__icon"></i>  8 - **************
+			</a>
+		</p>
+		<p>
+			<a href="mailto:a@orexland.ru" class="paragraph  my-b-normal paragraph_dark">
+				<i class="fas fa-envelope-open-text footer__icon"></i> ****.@mail.ru
+			</a>
+		</p>
+		<h2 class="heading-secondary my-b-normal">
+			<i class="fas fa-users primary-color"></i>
+			 Наши сети 
+		</h2>
+	  	<div class="contacts">
+	  		<a href="https://www.instagram.com/aiur95_/" ><i class="fab fa-instagram contacts__icon"></i></a>
+     		<a href="https://vk.com/aiurochirov" ><i class="fab fa-vk contacts__icon"></i></a>
+	  	</div>	
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

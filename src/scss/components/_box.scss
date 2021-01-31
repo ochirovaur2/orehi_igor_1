@@ -1,0 +1,51 @@
+.box {
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1.5rem;
+	background: orange;
+	font-size: 1.6rem;
+	/* .box__img */
+	&__img{
+		width: 14rem; 
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	/* .box__item */
+	&__item {
+		margin: 0 1.5rem;
+		width: calc(100% / 12 * 3 - 3rem);
+		background: lightgreen;
+		min-height: 10rem;
+		padding: 1.5em;
+		text-align:  center;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	/* .box__btn */
+	&__btn{
+		margin-top: auto;
+	}
+	
+	@media only screen and (max-width: $bp-medium){
+		justify-content: center;
+
+		&__item{
+			//////////////////////////////////
+			// It looks like a bug in IE with calc
+			// So instead of using "calc(100% / 12 * 6 - 3rem);"
+			// We use: "width: calc(100% / 12 * 5.5 - 3rem);"
+			// Bug is explained here: 
+			// https://stackoverflow.com/questions/21942183/multiline-flexbox-in-ie11-calculating-widths-incorrectly/21950351#21950351 
+			width: calc(100% / 12 * 5.5 - 3rem);
+		}
+	}
+	@media only screen and (max-width: $bp-small){
+		margin: 0 auto;
+		&__item{
+			width: calc(100% - 3rem);
+		}
+	}
+}

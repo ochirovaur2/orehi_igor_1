@@ -1,0 +1,25 @@
+<% var data = {
+  title: "Заказ оформлен | Онлайн-магазин Вкусная Лавка",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+	<div class="row height">
+		<h2 class="heading-secondary my-b-normal">
+			<i class="fas fa-grin-hearts color-forth"></i>
+			Спасибо! Ваша заявка принята. 
+		</h2>
+		<p class="paragraph my-b-normal">
+			
+			<i class="fas fa-user-check primary-color"></i>
+			В ближайшее время с вами свяжется наш менеджер. 
+			
+		</p>
+		<p>
+        </p>
+	</div>
+	
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
